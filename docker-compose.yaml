@@ -1,0 +1,11 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: weather-api-proxy
+    restart: unless-stopped
+    ports:
+      - "${PORT:-4400}:${PORT:-4400}"
+    env_file:
+      - .env

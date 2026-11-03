@@ -1,0 +1,10 @@
+allowBuilds:
+  "@parcel/watcher": true
+  "@scarf/scarf": true
+  unrs-resolver: true
+permissions:
+  dotenv:
+    skills: true
+skills:
+  dirs:
+    - .claude/skills
